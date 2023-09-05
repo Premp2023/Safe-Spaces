@@ -1,9 +1,30 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <HelloWorld />
+    <Sidebar/>
+    <Searchbar/>  
+    <router-view/>
+    <Complaint/>
+  <Footer/>
 </template>
 
-<style scoped></style>
+<script setup></script>
+
+<style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --public-sans:'Public Sans', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --primary:#185b6acc;
+    --secondary:#F8F7FA;
+    --white:#fff;
+    --text-heading:#4B465C;
+    --Primary-light:rgba(24, 91, 106, 0.69999998807);
+    --disable-text:rgba(75,70,92,45%);
+    --text:rgba(75,70,92,75%);
+}
+
+body{
+    font-family: var(--public-sans);
+}
+</style>
